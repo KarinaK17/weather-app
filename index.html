@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header><h1>WEATHER APP</h1></header>
+    <div class="content">
+      <div class="input">
+        <label for="city"
+          >City:
+          <div id="info">
+            If you want to specify your search, you can add a country code after
+            the city (like this "Venice, IT"). If the city is in the USA, you
+            can also specify the state (like this "Springfield, OR, US").
+          </div>
+        </label>
+        <input type="text" id="city" name="city" />
+        <button id="check-weather">Check weather</button>
+      </div>
+      <div class="output">
+        <div class="grid-container">
+          <div class="location">
+            <p id="city-output" class="main"></p>
+            <p id="country" class="additional"></p>
+          </div>
+          <div class="weather">
+            <p id="weather" class="main"></p>
+            <p id="description" class="additional"></p>
+            <p id="wind-speed" class="additional"></p>
+          </div>
+          <div class="temp">
+            <p id="degree"></p>
+            <p id="feels" class="additional"></p>
+            <button id="change-degrees">Change to Fahrenheit</button>
+          </div>
+
+          <div class="image">
+            <img src="start.webp" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Photos and gifs by <a href="https://giphy.com">GIPHY</a>,
+        <a href="https://pixabay.com/">Pixabay</a>
+        and <a href="https://livingstills.tumblr.com/">Living Stills</a>.
+      </p>
+    </footer>
+  </body>
+</html>
