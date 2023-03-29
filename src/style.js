@@ -31,7 +31,7 @@ function addTextInfo(info) {
 
     cityOutput.textContent = info.city;
     country.textContent = info.country;
-    weather.textContent = info.type;
+    weather.textContent = `${info.type}, `;
     description.textContent = info.description;
     wind.textContent = `Wind speed: ${
       Math.round(info.windSpeed * 10) / 10
